@@ -22,7 +22,8 @@
       "error",
       "absolute-first"
     ],
-    "import/newline-after-import": "error"
+		"import/newline-after-import": "error",
+		"arrow-body-style":"off"
   },
   "globals": {
     "window": true,
