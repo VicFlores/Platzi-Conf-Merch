@@ -1,8 +1,10 @@
-import React from 'react'
+import React from 'react';
+import Products from '../components/Products';
+import initialState from '../initialState'
 
 const Home = () => (
   <div>
-    <p>Hola desde Home</p>
+    <Products products={initialState.products} />
   </div>
 )
 
