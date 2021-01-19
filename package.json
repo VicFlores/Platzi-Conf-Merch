@@ -13,6 +13,8 @@
   "author": "Vic Ferman Flores Escobar",
   "license": "ISC",
   "dependencies": {
+    "@react-google-maps/api": "^2.1.0",
+    "axios": "^0.21.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-paypal-button": "^4.1.1",
@@ -20,8 +22,10 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
+    "@babel/plugin-transform-runtime": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
     "@babel/preset-react": "^7.12.10",
+    "@babel/runtime": "^7.12.5",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.0.1",
