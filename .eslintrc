@@ -23,7 +23,8 @@
       "absolute-first"
     ],
 		"import/newline-after-import": "error",
-		"arrow-body-style":"off"
+		"arrow-body-style":"off",
+		"no-console":"off"
   },
   "globals": {
     "window": true,

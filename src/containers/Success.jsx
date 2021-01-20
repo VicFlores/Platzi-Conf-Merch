@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
+import { Helmet } from 'react-helmet';
 import Maps from '../components/Maps';
 import AppContext from '../context/AppContext';
-import { Helmet } from 'react-helmet';
 import useGoogleAddress from '../hooks/useGoogleAddress';
 import '../styles/components/Success.css';
 
