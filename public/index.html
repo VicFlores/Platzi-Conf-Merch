@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Platzi-Conf Merch</title>
-	<script src="https://kit.fontawesome.com/48e8ccee66.js" crossorigin="anonymous"></script>
-</head>
-<body>
-	
-	<div id="App" ></div>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Platzi-Conf Merch</title>
+    <link rel="manifest" href="/manifest.json" />
+    <script
+      src="https://kit.fontawesome.com/48e8ccee66.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="App"></div>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+          navigator.serviceWorker
+            .register('service-worker.js')
+            .then(
+              function (registration) {
+                console.log(
+                  'ServiceWorker registration successful with scope: ',
+                  registration.scope
+                );
+              },
+              function (err) {
+                console.log('ServiceWorker registration failed: ', err);
+              }
+            )
+            .catch(function (err) {
+              console.log(err);
+            });
+        });
+      } else {
+        console.log('service worker is not supported');
+      }
+    </script>
+  </body>
 </html>
